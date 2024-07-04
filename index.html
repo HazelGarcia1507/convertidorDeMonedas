@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Convertidor de monedas</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Convertidor de Monedas</h1>
+            <form id="Convertidor">
+                <label for="Amount">Cantidad que desea convertir:</label>
+                <input type="number" id="Amount" placeholder="Ingresa el monto" required>
+
+                <label for="fromCurrency">Tipo de moneda que deseas convertir</label>
+                <select id="fromCurrency">
+                    <option value="USD">Dolar Estadounidense</option>
+                    <option value="MXN">Pesos Mexicanos</option>
+                    <option value="EUR">Euros</option>
+                    <option value="CAD">Dolar canadiense</option>
+                </select>
+
+                <label for="toCurrency">Tipo de moneda a la que deseas convertir: </label>
+                <select id="toCurrency">
+                    <option value="USD">Dolar Estadounidense</option>
+                    <option value="MXN">Pesos Mexicanos</option>
+                    <option value="EUR">Euros</option>
+                    <option value="CAD">Dolar canadiense</option>
+                </select>
+
+                <button type="submit">Calcular</button>
+                
+            </form>
+
+            <div id="results" class="hidden">
+                <p>Cantidad total: $<span id="convertedAmount">0.00</span></p>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
